@@ -50,7 +50,7 @@
 
 /** Google Font (Open Sans)
 ***************************************/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
 
 /** Bootstrap Styles
 **************************************/
@@ -80,8 +80,8 @@
 /** 01.CSS RESET
 **********************************/
 /**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
+ * Eric Meyer's Reset CSS v2.0 (https://meyerweb.com/eric/tools/css/reset/)
+ * https://cssreset.com
  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
