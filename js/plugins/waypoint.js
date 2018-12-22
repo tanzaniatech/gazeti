@@ -52,7 +52,7 @@
   var Waypoint = window.Waypoint
   var oldWindowLoad = window.onload
 
-  /* https://imakewebthings.com/waypoints/api/context */
+  /* http://imakewebthings.com/waypoints/api/context */
   function Context(element) {
     this.element = element
     this.Adapter = Waypoint.Adapter
@@ -205,7 +205,7 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/context-destroy */
+  /* http://imakewebthings.com/waypoints/api/context-destroy */
   Context.prototype.destroy = function() {
     var allWaypoints = []
     for (var axis in this.waypoints) {
@@ -219,7 +219,7 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/context-refresh */
+  /* http://imakewebthings.com/waypoints/api/context-refresh */
   Context.prototype.refresh = function() {
     /*eslint-disable eqeqeq */
     var isWindow = this.element == this.element.window
@@ -317,7 +317,7 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/context-find-by-element */
+  /* http://imakewebthings.com/waypoints/api/context-find-by-element */
   Context.findByElement = function(element) {
     return contexts[element.waypointContextKey]
   }
@@ -346,7 +346,7 @@
   var keyCounter = 0
   var allWaypoints = {}
 
-  /* https://imakewebthings.com/waypoints/api/waypoint */
+  /* http://imakewebthings.com/waypoints/api/waypoint */
   function Waypoint(options) {
     if (!options) {
       throw new Error('No options passed to Waypoint constructor')
@@ -397,7 +397,7 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/destroy */
+  /* http://imakewebthings.com/waypoints/api/destroy */
   Waypoint.prototype.destroy = function() {
     this.context.remove(this)
     this.group.remove(this)
@@ -405,14 +405,14 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/disable */
+  /* http://imakewebthings.com/waypoints/api/disable */
   Waypoint.prototype.disable = function() {
     this.enabled = false
     return this
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/enable */
+  /* http://imakewebthings.com/waypoints/api/enable */
   Waypoint.prototype.enable = function() {
     this.context.refresh()
     this.enabled = true
@@ -420,13 +420,13 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/next */
+  /* http://imakewebthings.com/waypoints/api/next */
   Waypoint.prototype.next = function() {
     return this.group.next(this)
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/previous */
+  /* http://imakewebthings.com/waypoints/api/previous */
   Waypoint.prototype.previous = function() {
     return this.group.previous(this)
   }
@@ -443,37 +443,37 @@
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/destroy-all */
+  /* http://imakewebthings.com/waypoints/api/destroy-all */
   Waypoint.destroyAll = function() {
     Waypoint.invokeAll('destroy')
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/disable-all */
+  /* http://imakewebthings.com/waypoints/api/disable-all */
   Waypoint.disableAll = function() {
     Waypoint.invokeAll('disable')
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/enable-all */
+  /* http://imakewebthings.com/waypoints/api/enable-all */
   Waypoint.enableAll = function() {
     Waypoint.invokeAll('enable')
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/refresh-all */
+  /* http://imakewebthings.com/waypoints/api/refresh-all */
   Waypoint.refreshAll = function() {
     Waypoint.Context.refreshAll()
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/viewport-height */
+  /* http://imakewebthings.com/waypoints/api/viewport-height */
   Waypoint.viewportHeight = function() {
     return window.innerHeight || document.documentElement.clientHeight
   }
 
   /* Public */
-  /* https://imakewebthings.com/waypoints/api/viewport-width */
+  /* http://imakewebthings.com/waypoints/api/viewport-width */
   Waypoint.viewportWidth = function() {
     return document.documentElement.clientWidth
   }
@@ -507,7 +507,7 @@
   var $ = window.jQuery
   var Waypoint = window.Waypoint
 
-  /* https://imakewebthings.com/waypoints/shortcuts/sticky-elements */
+  /* http://imakewebthings.com/waypoints/shortcuts/sticky-elements */
   function Sticky(options) {
     this.options = $.extend({}, Waypoint.defaults, Sticky.defaults, options)
     this.element = this.options.element
