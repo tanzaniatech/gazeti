@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.gazeti.digitalwebbased",
+    "sha256_cert_fingerprints":
+    ["EF:4E:90:5A:BA:18:7A:AC:AB:29:AC:A9:AB:F2:E8:D5:BE:A6:54:D5:4C:A0:17:F2:1F:18:FF:F5:68:5A:B5:2E"]
+  }
+}]
